@@ -5,6 +5,7 @@ describe('OLSKTestimonialList_Misc', function () {
 	const item = {
 		title: Math.random().toString(),
 		review: Math.random().toString(),
+		stars: Math.max(1, Date.now() % 5),
 	};
 
 	before(function () {
@@ -17,6 +18,20 @@ describe('OLSKTestimonialList_Misc', function () {
 		
 		it('classes OLSKCommonCard', function () {
 			browser.assert.hasClass(OLSKTestimonialListItem, 'OLSKCommonCard');
+		});
+
+	});
+
+	describe('OLSKTestimonialListItemStars', function test_OLSKTestimonialListItemStars () {
+
+		it('sets aria-hidden', function () {
+			browser.assert.attribute(OLSKTestimonialListItemStars, 'aria-hidden', 'true');
+		});
+		
+		it('sets text', function () {
+			browser.assert.text(OLSKTestimonialListItemStars, Array.from(Array(item.stars)).map(function () {
+				return '★'
+			}).join(''));
 		});
 
 	});

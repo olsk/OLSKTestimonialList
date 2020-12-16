@@ -3,7 +3,12 @@
 <% OLSKTestimonialListData.forEach(function (e) { -%>
 	<div class="OLSKTestimonialListItem OLSKCommonCard">
 		<section>
-			<span class="OLSKTestimonialListItemTitle"><%= e.title %></span>
+			<div>
+				<span class="OLSKTestimonialListItemTitle"><%= e.title %></span>
+				<span class="OLSKTestimonialListItemStars" aria-hidden="true"><%= Array.from(Array(e.stars)).map(function () {
+				return '★'
+			}).join('') %></span>
+			</div>
 			<span class="OLSKTestimonialListItemBlurb"><%= e.review %></span>
 		</section>
 	</div>

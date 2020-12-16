@@ -5,6 +5,7 @@ Object.entries({
 	
 	OLSKTestimonialListItem: '.OLSKTestimonialListItem',
 	OLSKTestimonialListItemTitle: '.OLSKTestimonialListItemTitle',
+	OLSKTestimonialListItemStars: '.OLSKTestimonialListItemStars',
 	OLSKTestimonialListItemBlurb: '.OLSKTestimonialListItemBlurb',
 }).map(function (e) {
 	return global[e.shift()]  = e.pop();
@@ -42,6 +43,10 @@ describe('OLSKTestimonialList_Access', function () {
 
 		it('shows OLSKTestimonialListItemTitle', function () {
 			browser.assert.elements(OLSKTestimonialListItemTitle, count);
+		});
+
+		it('shows OLSKTestimonialListItemStars', function () {
+			browser.assert.elements(OLSKTestimonialListItemStars, count);
 		});
 
 		it('shows OLSKTestimonialListItemBlurb', function () {
