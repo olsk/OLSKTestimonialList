@@ -5,6 +5,7 @@ describe('OLSKTestimonialList_Misc', function () {
 	const item = {
 		title: Math.random().toString(),
 		review: Math.random().toString(),
+		author: Math.random().toString(),
 		stars: Math.max(1, Date.now() % 5),
 	};
 
@@ -48,6 +49,14 @@ describe('OLSKTestimonialList_Misc', function () {
 		
 		it('sets text', function () {
 			browser.assert.text(OLSKTestimonialListItemBlurb, item.review);
+		});
+		
+	});
+
+	describe('OLSKTestimonialListItemAuthor', function test_OLSKTestimonialListItemAuthor () {
+		
+		it('sets text', function () {
+			browser.assert.text(OLSKTestimonialListItemAuthor, item.author);
 		});
 		
 	});
