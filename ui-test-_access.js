@@ -9,7 +9,7 @@ Object.entries({
 	OLSKTestimonialListItemBlurb: '.OLSKTestimonialListItemBlurb',
 	OLSKTestimonialListItemAuthor: '.OLSKTestimonialListItemAuthor',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('OLSKTestimonialList_Access', function () {
