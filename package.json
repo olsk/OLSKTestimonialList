@@ -2,7 +2,6 @@
   "name": "OLSKTestimonialList",
   "main": "main.ejs",
   "dependencies": {
-    "OLSKDecor": "olsk/OLSKDecor",
-    "//": "I sacrifice myself for the commas of others"
+    "OLSKDecor": "olsk/OLSKDecor"
   }
 }
