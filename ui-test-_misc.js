@@ -18,7 +18,7 @@ describe('OLSKTestimonialList_Misc', function () {
 	describe('OLSKTestimonialListItem', function test_OLSKTestimonialListItem () {
 		
 		it('classes OLSKCommonCard', function () {
-			browser.assert.hasClass(OLSKTestimonialListItem, 'OLSKCommonCard');
+			return browser.assert.hasClass(OLSKTestimonialListItem, 'OLSKCommonCard');
 		});
 
 	});
@@ -26,7 +26,7 @@ describe('OLSKTestimonialList_Misc', function () {
 	describe('OLSKTestimonialListItemStars', function test_OLSKTestimonialListItemStars () {
 
 		it('sets aria-hidden', function () {
-			browser.assert.attribute(OLSKTestimonialListItemStars, 'aria-hidden', 'true');
+			return browser.assert.attribute(OLSKTestimonialListItemStars, 'aria-hidden', 'true');
 		});
 		
 		it('sets text', function () {
@@ -40,7 +40,7 @@ describe('OLSKTestimonialList_Misc', function () {
 	describe('OLSKTestimonialListItemTitle', function test_OLSKTestimonialListItemTitle () {
 		
 		it('sets text', function () {
-			browser.assert.text(OLSKTestimonialListItemTitle, item.title);
+			return browser.assert.text(OLSKTestimonialListItemTitle, item.title);
 		});
 		
 	});
@@ -48,7 +48,7 @@ describe('OLSKTestimonialList_Misc', function () {
 	describe('OLSKTestimonialListItemBlurb', function test_OLSKTestimonialListItemBlurb () {
 		
 		it('sets text', function () {
-			browser.assert.text(OLSKTestimonialListItemBlurb, item.review);
+			return browser.assert.text(OLSKTestimonialListItemBlurb, item.review);
 		});
 		
 	});
@@ -56,7 +56,7 @@ describe('OLSKTestimonialList_Misc', function () {
 	describe('OLSKTestimonialListItemAuthor', function test_OLSKTestimonialListItemAuthor () {
 		
 		it('sets text', function () {
-			browser.assert.text(OLSKTestimonialListItemAuthor, item.author);
+			return browser.assert.text(OLSKTestimonialListItemAuthor, item.author);
 		});
 		
 	});

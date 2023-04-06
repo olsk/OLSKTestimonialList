@@ -19,11 +19,11 @@ describe('OLSKTestimonialList_Access', function () {
 	});
 	
 	it('shows OLSKTestimonialList', function() {
-		browser.assert.elements(OLSKTestimonialList, 1);
+		return browser.assert.elements(OLSKTestimonialList, 1);
 	});
 
 	it('hides OLSKTestimonialListItem', function () {
-		browser.assert.elements(OLSKTestimonialListItem, 0);
+		return browser.assert.elements(OLSKTestimonialListItem, 0);
 	});
 
 	context('OLSKTestimonialListData', function () {
@@ -39,23 +39,23 @@ describe('OLSKTestimonialList_Access', function () {
 		});
 
 		it('shows OLSKTestimonialListItem', function () {
-			browser.assert.elements(OLSKTestimonialListItem, count);
+			return browser.assert.elements(OLSKTestimonialListItem, count);
 		});
 
 		it('shows OLSKTestimonialListItemTitle', function () {
-			browser.assert.elements(OLSKTestimonialListItemTitle, count);
+			return browser.assert.elements(OLSKTestimonialListItemTitle, count);
 		});
 
 		it('shows OLSKTestimonialListItemStars', function () {
-			browser.assert.elements(OLSKTestimonialListItemStars, count);
+			return browser.assert.elements(OLSKTestimonialListItemStars, count);
 		});
 
 		it('shows OLSKTestimonialListItemBlurb', function () {
-			browser.assert.elements(OLSKTestimonialListItemBlurb, count);
+			return browser.assert.elements(OLSKTestimonialListItemBlurb, count);
 		});
 
 		it('shows OLSKTestimonialListItemAuthor', function () {
-			browser.assert.elements(OLSKTestimonialListItemAuthor, count);
+			return browser.assert.elements(OLSKTestimonialListItemAuthor, count);
 		});
 
 	});
